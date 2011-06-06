@@ -1,0 +1,41 @@
+######################
+###
+### How to Run
+###
+######################
+#
+#  to run, type the following command
+#
+
+	./drawstategraph S T < input.file  > output.file
+
+#  where S and T are integer numbers and the input file
+# contains an even amount of words of length T in S letters
+# 
+# The output is a TeX code that draws the State Graph
+# and requires the package 'pstricks'
+#
+######################
+#
+# the option - P adds the \begin{pspicture} and \end{pspict}
+#
+
+	./drawstategraph 3 4 -P < testinput3.txt
+
+##################
+#
+# The option -H creates a self contained LaTeX file
+# starting with the \documentclass, \begin{document} and so
+#
+
+	./drawstategraph 3 4 -H < testinput3.txt
+
+#################
+#
+# The option -I is for including the initial states in the graph
+# by making a larger node on the initial state
+#
+	./drawstategraph 3 4 -I < testinput3.txt
+
+#
+#################
