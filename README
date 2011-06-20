@@ -15,7 +15,7 @@ sufficient statistics would be
 
 
 The sufficient statistics of a word w can naturally be represented by the state
-graph which is a multi graph on N nodes with x direted arcs from i to j if
+graph which is a multi graph on N nodes with x directed arcs from i to j if
 there are x transition from i to j in the word w.
 
 
