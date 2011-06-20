@@ -12,6 +12,9 @@
 
 ///  Usage: drawstategraph 3 4 -H < (file with strings)
 ///     eg: drawstategraph 3 4 -P < <(echo 1231 1212) 
+///     eg: drawstategraph 3 4 -C < <(echo 1 0 1 0 2 0 1 0 2)
+///     eg: drawstategraph 3 4 -C -L < <(echo 0 1 0 2 1 0 )
+
 
 #include "circlefromthreepoints.h"
 #include "calcangle.h"

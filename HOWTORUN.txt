@@ -4,9 +4,22 @@
 ###
 ######################
 #
-#  to run, type the following command
 #
+#  There are two parameters: 
+#  -H will print out latex document and pstricks headers.
+#  -P will print out just pstricks headers.
+#  -I will draw a symbol for the initial state.
+#  -C will read in the counts instead of a path
+#  -L will assume loopless when reading in counts
+#  -A <num> will be arrowSep
+#
+#  Usage: drawstategraph 3 4 -H < (file with strings)
+#     eg: drawstategraph 3 4 -P < <(echo 1231 1212) 
+#     eg: drawstategraph 3 4 -C < <(echo 1 0 1 0 2 0 1 0 2)
+#     eg: drawstategraph 3 4 -C -L < <(echo 0 1 0 2 1 0 )
 
+
+#  to run, type the following command
 	./drawstategraph S T < input.file  > output.file
 
 #  where S and T are integer numbers and the input file
