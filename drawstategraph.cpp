@@ -1,3 +1,26 @@
+// DrawStateMoveGraphs is for drawing state and move graphs of Markov chains.
+// Copyright (C) 2011 David C. Haws
+
+//This program is free software: you can redistribute it and/or modify
+//    it under the terms of the GNU General Public License as published by
+//    the Free Software Foundation, either version 3 of the License, or
+//    (at your option) any later version.
+//
+//    This program is distributed in the hope that it will be useful,
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//    GNU General Public License for more details.
+//
+//    You should have received a copy of the GNU General Public License
+//    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+// See LICENSE
+
+// David Haws
+// 6/20/11
+// www.davidhaws.net
+// https://github.com/dchaws
+
 //  This program reads sets of strings, e.g. "12341 14213 13423" and outputs
 ///  pstricks code which draws the state graph. S and T must be specified on the
 ///  command line. 
