@@ -41,6 +41,7 @@ draws the state graph in latex using the pstricks package.
   -I will draw a symbol for the initial state.
   -C will read in the counts instead of a path
   -L will assume loopless when reading in counts
+  -D will print the degree counts.
   -A <num> will be arrowSep
 
   Usage: drawstategraph 3 4 -H < (file with strings)

@@ -31,6 +31,7 @@
 ///  -I will draw a symbol for the initial state.
 ///  -C will read in the counts instead of a path
 ///  -L will assume loopless when reading in counts
+///  -D will print the degree counts.
 ///  -A <num> will be arrowSep
 
 ///  Usage: drawstategraph 3 4 -H < (file with strings)
@@ -73,6 +74,7 @@ int main(int argc, char **argv)
     int outputLatexHeader = 0;
     int outputpstricksHeader = 0;
     int drawInitialStates = 0;
+    int printDegreeCounts = 0; // 0 means do not print degree count, 1 means print degree counts
     int readCounts = 0; // 0 means read in the word, 1 means in the counts
     int loopless = 0; // 0 means loops, 1 means loopless
 
@@ -112,6 +114,10 @@ int main(int argc, char **argv)
             if (tempS == "-L")
             {
                 loopless = 1;
+            }
+            if (tempS == "-D")
+            {
+                printDegreeCounts = 1;
             }
             if (tempS == "-A")
             {
@@ -317,12 +323,15 @@ int main(int argc, char **argv)
         cout << "){" << i+1 << "}" << endl;
 
 
-        cout << "\\rput(";
-        cout << (stateGraphRadius + degreeCountRadiusEpsilon)*cos(2*i*M_PI/(double)S) + xOffset;
-        cout << ",";
-        cout << (stateGraphRadius + degreeCountRadiusEpsilon)*sin(2*i*M_PI/(double)S) + yOffset;
-        //cout << "){\\psframebox*{" << i << "}}" << endl;
-        cout << "){" << "\\color{green} " << degreeCounts[i] << "}" << endl;
+        if (printDegreeCounts == 1)
+        {
+            cout << "\\rput(";
+            cout << (stateGraphRadius + degreeCountRadiusEpsilon)*cos(2*i*M_PI/(double)S) + xOffset;
+            cout << ",";
+            cout << (stateGraphRadius + degreeCountRadiusEpsilon)*sin(2*i*M_PI/(double)S) + yOffset;
+            //cout << "){\\psframebox*{" << i << "}}" << endl;
+            cout << "){" << "\\color{green} " << degreeCounts[i] << "}" << endl;
+        }
 
     }
 
