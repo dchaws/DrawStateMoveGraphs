@@ -298,6 +298,7 @@ int main(int argc, char **argv)
                     angleThree = calcangle(cx,cy,xStates[i],yStates[i])*180/M_PI;
                     arrowDrawColor = arrowDrawColors[*(vertexColors[i][j].begin())];
                     vertexColors[i][j].pop_front();
+                    cout << "\% Edge " << i+1 << " -> " << j+1 << endl;
                     cout << "\\psarc[linecolor=" << arrowDrawColor << "](" << cx << "," << cy << "){" << r << "}{" << angleTwo - angleEpsilon << "}{" << angleOne << "}" << endl;
                     cout << "\\psarc[linecolor=" << arrowDrawColor << ",arrowsize=6pt]{->}(" << cx << "," << cy << "){" << r << "}{" << angleThree << "}{" << angleTwo << "}" << endl;
 
@@ -308,6 +309,7 @@ int main(int argc, char **argv)
 
     for (int i=0;i<S;i++)
     {
+        cout << "\% Node " << i+1 << endl;
         cout << "\\pscircle*[linecolor=black](";
         cout << xStates[i];
         cout << ",";
