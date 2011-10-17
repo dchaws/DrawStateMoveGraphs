@@ -25,6 +25,12 @@ draws the state graph in latex using the pstricks package.
 ## Example
 ![](https://github.com/dchaws/DrawStateMoveGraphs/raw/master/StateMoveGraphEx.png)
 
+## Compiling
+
+    make
+
+DrawSateMoveGraphs has been successfully compiled on linux and Mac OS.
+
 ## How to run
 To run, type the following 
 	$ ./drawstategraph S T < input.file  > output.file
@@ -74,3 +80,5 @@ To run, type the following
     $ ./drawstategraph 3 4 -I < testinput3.txt
 
 
+The program `drawmovegraph` will instead draw the move graph and is called the same
+ass `drawstategraph`.
