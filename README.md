@@ -81,4 +81,4 @@ To run, type the following
 
 
 The program `drawmovegraph` will instead draw the move graph and is called the same
-ass `drawstategraph`.
+as `drawstategraph`.
