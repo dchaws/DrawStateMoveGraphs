@@ -3,15 +3,15 @@ from 1,...,N. Under the time homogeneous model the sufficient statistics are
 given by the number of transitions from i to j. So, given a word 1231121, the
 sufficient statistics would be
 
-$ 11  1
-$ 12  2
-$ 13  0
-$ 21  1
-$ 22  0
-$ 23  1
-$ 31  1
-$ 32  0
-$ 33  0
+    11  1
+    12  2
+    13  0
+    21  1
+    22  0
+    23  1
+    31  1
+    32  0
+    33  0
 
 
 The sufficient statistics of a word w can naturally be represented by the state
@@ -58,19 +58,19 @@ To run, type the following
  the option - P adds the \begin{pspicture} and \end{pspict}
 
 
-$   ./drawstategraph 3 4 -P < testinput3.txt
+    $ ./drawstategraph 3 4 -P < testinput3.txt
 
 
  The option -H creates a self contained LaTeX file
  starting with the \documentclass, \begin{document} and so
 
 
-$ ./drawstategraph 3 4 -H < testinput3.txt
+    $ ./drawstategraph 3 4 -H < testinput3.txt
 
 
  The option -I is for including the initial states in the graph
  by making a larger node on the initial state
 
-$ ./drawstategraph 3 4 -I < testinput3.txt
+    $ ./drawstategraph 3 4 -I < testinput3.txt
 
 
