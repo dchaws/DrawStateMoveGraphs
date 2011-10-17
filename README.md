@@ -3,15 +3,15 @@ from 1,...,N. Under the time homogeneous model the sufficient statistics are
 given by the number of transitions from i to j. So, given a word 1231121, the
 sufficient statistics would be
 
-11  1
-12  2
-13  0
-21  1
-22  0
-23  1
-31  1
-32  0
-33  0
+$ 11  1
+$ 12  2
+$ 13  0
+$ 21  1
+$ 22  0
+$ 23  1
+$ 31  1
+$ 32  0
+$ 33  0
 
 
 The sufficient statistics of a word w can naturally be represented by the state
@@ -23,7 +23,7 @@ The program drawstategraph reads in words, or the sufficient statistics, and
 draws the state graph in latex using the pstricks package.
 
 ## Example
-![](https://github.com/dchaws/DrawStateMoveGraphs/blob/master/StateMoveGraphEx.png)
+![](https://github.com/dchaws/DrawStateMoveGraphs/raw/master/StateMoveGraphEx.png)
 
 ## How to run
 To run, type the following 
